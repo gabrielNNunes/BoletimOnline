@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="234dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:clickable="false"
+        android:fontFamily="casual"
+        android:text="@string/lista_de_alunos"
+        android:textAlignment="center"
+        android:textColor="#274328"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/image1"
+        app:layout_constraintTop_toBottomOf="@+id/image1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/image2"
+        app:layout_constraintTop_toBottomOf="@+id/image2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/nomeAluno1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image1"
+        app:layout_constraintStart_toEndOf="@+id/image1"
+        app:layout_constraintTop_toTopOf="@+id/image1"
+        tools:text="Nome do Aluno" />
+
+    <TextView
+        android:id="@+id/nomeAluno2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image2"
+        app:layout_constraintStart_toStartOf="@+id/nomeAluno1"
+        app:layout_constraintTop_toTopOf="@+id/image2"
+        tools:text="Nome do Aluno" />
+
+    <TextView
+        android:id="@+id/nomeAluno3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/image3"
+        app:layout_constraintStart_toStartOf="@+id/nomeAluno2"
+        app:layout_constraintTop_toTopOf="@+id/image3"
+        tools:text="Nome do Aluno" />
+
+    <TextView
+        android:id="@+id/notaAluno1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nomeAluno1"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/notaAluno2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nomeAluno2"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="100" />
+
+    <TextView
+        android:id="@+id/notaAluno3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/nomeAluno3"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="100" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
